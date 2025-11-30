@@ -6,7 +6,7 @@ function NoteCard({ note, onEdit, onDelete }) {
     if (window.confirm('Are you sure you want to delete this note?')) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete(`http://localhost:5000/api/notes/${note._id}`, {
+        await axios.delete(`https://penpal-b08z.onrender.com/api/notes/${note._id}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         onDelete();
