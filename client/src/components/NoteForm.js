@@ -17,7 +17,7 @@ function NoteForm({ note, onClose, onSave }) {
     try {
       if (note) {
         await axios.put(
-          `http://localhost:5000/api/notes/${note._id}`,
+          `https://penpal-b08z.onrender.com/api/notes/${note._id}`,
           { title, content, tags: tagsArray },
           { headers: { Authorization: `Bearer ${token}` } }
         );
