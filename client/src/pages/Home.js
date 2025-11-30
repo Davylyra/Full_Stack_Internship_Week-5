@@ -24,7 +24,7 @@ function Home() {
   const fetchNotes = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/notes', {
+      const response = await axios.get('https://penpal-b08z.onrender.com/api/notes', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setNotes(response.data);
