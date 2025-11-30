@@ -23,7 +23,7 @@ function NoteForm({ note, onClose, onSave }) {
         );
       } else {
         await axios.post(
-          'http://localhost:5000/api/notes',
+          'https://penpal-b08z.onrender.com/api/notes',
           { title, content, tags: tagsArray },
           { headers: { Authorization: `Bearer ${token}` } }
         );
