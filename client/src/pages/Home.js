@@ -75,7 +75,7 @@ const handleLogout = () => {
   return (
     <div className="home-container">
       <nav className="navbar">
-        <h1>📝 Notes Keeper</h1>
+        <h1>📝 Penpal</h1>
         <div className="nav-right">
           <span>Welcome, {user?.name}</span>
           <button onClick={handleLogout} className="btn-logout">Logout</button>
