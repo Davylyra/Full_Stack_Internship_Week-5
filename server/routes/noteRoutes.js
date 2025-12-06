@@ -8,7 +8,7 @@ const {
 } = require('../controllers/noteController');
 const authMiddleware = require('../middleware/authMiddleware');
 
-// All routes are protected
+
 router.get('/', authMiddleware, getNotes);
 router.post('/', authMiddleware, createNote);
 router.put('/:id', authMiddleware, updateNote);
